@@ -1,104 +1,92 @@
-# PingMe  
+# Loopin
 
-A full-stack real-time chat application built with the MERN stack (MongoDB, Express, React, Node.js) and Socket.IO, designed to deliver a secure and dynamic messaging experience with a modern, responsive UI.  
+Loopin is a modern, real-time chat application that lets you connect with friends, share messages, and update profile pictures easily. It’s designed to be simple, responsive, and fast.
 
-## **Features**  
+---
 
-### **Frontend**  
-- **React & Tailwind CSS:** Fully responsive and clean UI for an optimal user experience on all devices.  
-- **State Management:** Zustand for efficient and lightweight state management.  
-- **Theming:** DaisyUI integration with 30+ themes, stored in local storage for persistence.  
-- **Skeleton Loaders:** Enhanced loading experience with smooth transitions.  
-- **Notifications:** React Hot Toast for real-time notifications.  
-- **Socket.IO Client:** Real-time updates for messaging and user activity indicators.  
+## Features
 
-### **Backend**  
-- **Authentication:**  
-  - JSON Web Tokens (JWT) for secure authentication, stored in cookies with a 7-day expiry.  
-  - Expiration handling for enhanced security.  
-- **Database:** MongoDB and Mongoose for data modeling and storage.  
-- **Data Security:** Passwords hashed using bcrypt following best practices.  
-- **File Storage:** Cloudinary for uploading and retrieving images.  
-- **Real-Time Communication:** Socket.IO for real-time chat functionality.  
-- **REST API:** Built with Express.js for robust backend functionality.  
+- User registration and login with JWT authentication
+- Real-time messaging
+- Upload and update profile pictures
+- Responsive design for desktop and mobile
+- Secure backend with protected routes
 
-### **Key Functionalities**  
-1. **Authentication:**  
-   - Secure login and registration.  
-2. **Home Screen:**  
-   - Displays all registered users in a sidebar with live activity indicators (online/offline).  
-3. **Chat:**  
-   - Real-time messaging with support for text, images, or both.  
-4. **Profile Section:**  
-   - View profile details, update profile picture (instantly updated via Cloudinary).  
-5. **Settings:**  
-   - Choose from 30+ themes to customize the UI experience.  
-6. **Sidebar Toggle:**  
-   - Filter to show only online users.  
+---
 
-## **Tech Stack**  
+## Tech Stack
 
-### **Frontend**  
-- React  
-- Tailwind CSS  
-- DaisyUI  
-- Zustand  
-- Axios  
-- React Hot Toast  
-- Socket.IO Client  
+- Frontend: React, Vite, Tailwind CSS (or your chosen CSS framework)
+- Backend: Node.js, Express
+- Database: MongoDB
+- Authentication: JWT
+- Cloud Storage: Cloudinary (for profile pictures)
 
-### **Backend**  
-- Node.js  
-- Express.js  
-- MongoDB + Mongoose  
-- Socket.IO  
-- JSON Web Tokens (JWT)  
-- Bcrypt  
-- Cloudinary  
+---
 
-## How to Use
-1) Register or log in to the app.
-2) View users on the sidebar with live status indicators.
-3) Click a user to start chatting in real-time.
-4) Access settings to personalize the theme and profile to manage your details.
+## Getting Started
 
-## Demo 
+### Prerequisites
 
-### Home
-![image](https://github.com/user-attachments/assets/d029d6fd-1e0d-4e37-8870-748372dbe4df)
+- Node.js installed
+- MongoDB account or Atlas cluster
+- Cloudinary account for profile picture uploads
 
-### Profile
-![image](https://github.com/user-attachments/assets/d67a2187-a051-485e-918e-04c81f400c7d)
+### Installation
 
-### Settings
-![image](https://github.com/user-attachments/assets/3140652f-b957-4c3c-9a1e-e418910bf327)
+1. Clone the repository:
 
-### Signup Page
-![image](https://github.com/user-attachments/assets/0a11deb9-c748-414d-87ea-b216ab85fa4a)
+git clone https://github.com/Urmila-Tentu/loopin-chat-app.git
 
+2. Install backend dependencies:
 
+cd backend
+npm install
 
-# Contributing
-Contributions are welcome! Please fork the repository and submit a pull request.
+3. Install frontend dependencies:
 
+cd ../frontend
+npm install
 
-## **Deployment**  
-Deployed link:    *https://fullstack-chat-app-xoai.onrender.com/*
-The app is deployed on [Render](https://render.com) for a seamless full-stack experience.  
+4. Create a `.env` file in the backend folder with these variables:
 
+PORT=5001
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
 
-### **Prerequisites**  
-- Node.js and npm installed  
-- MongoDB running locally or a MongoDB Atlas connection string
+---
 
-## - Acknowledgments
-Render for deployment
-Cloudinary for image storage
-DaisyUI for themes
+### Running the App
 
-### **Clone the Repository**  
-```bash
-git clone https://github.com/SamVerse/FullStack-Chat-App/
-cd FullStack-Chat-App
+- Backend:
 
+cd backend
+npm start
 
+- Frontend:
+
+cd frontend
+npm run dev
+
+Open your browser at http://localhost:5173 to start using Loopin.
+
+---
+
+## Screenshots
+
+### Chat Window
+
+![Chat Window](screenshots/chat1.png)
+![Chat Window](screenshots/chat2.png)
+![Chat Window](screenshots/chat3.png)
+![Chat Window](screenshots/login.png)
+![Chat Window](screenshots/login1.png)
+
+---
+
+## License
+
+This project is for learning and personal use.
